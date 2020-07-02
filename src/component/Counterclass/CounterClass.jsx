@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export default class CounterClass extends Component {
     state = {
-        value: 4,
+        value: 0,
     };
     handlePlus = () => {
         this.setState({
@@ -25,8 +25,8 @@ export default class CounterClass extends Component {
     };
     render() {
         return (
-            <div>
-                <div className="count">{this.state.value}</div>
+            <div className="">
+                <div className="count">Count = {this.state.value}</div>
                 <div className="counter">
                     <button className="minus" onClick={this.handleMinus}>
                         -
