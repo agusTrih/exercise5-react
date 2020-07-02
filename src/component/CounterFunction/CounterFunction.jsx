@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./counterFunction.css";
 function CounterFunction() {
     const [value, setValue] = useState(0);
     // line bawah fungsi
@@ -17,10 +17,10 @@ function CounterFunction() {
         setValue(0);
     };
     return (
-        <div>
-            <div className="count">Count = {value}</div>
+        <div className="styling">
+            <div className="count">{value}</div>
             <div className="counter">
-                <button className="Minus" onClick={handleMinus}>
+                <button className="minus" onClick={handleMinus}>
                     -
                 </button>
                 <button className="plus" onClick={handlePlus}>

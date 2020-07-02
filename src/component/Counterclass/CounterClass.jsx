@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./counterclass.css";
 export default class CounterClass extends Component {
     state = {
         value: 0,
@@ -25,8 +25,8 @@ export default class CounterClass extends Component {
     };
     render() {
         return (
-            <div className="">
-                <div className="count">Count = {this.state.value}</div>
+            <div className="styling">
+                <div className="count">{this.state.value}</div>
                 <div className="counter">
                     <button className="minus" onClick={this.handleMinus}>
                         -
