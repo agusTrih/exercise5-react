@@ -18,7 +18,7 @@ function CounterFunction() {
     };
     return (
         <div>
-            <div className="count">{value}</div>
+            <div className="count">Count = {value}</div>
             <div className="counter">
                 <button className="Minus" onClick={handleMinus}>
                     -
